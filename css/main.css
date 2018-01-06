@@ -1,0 +1,52 @@
+﻿body{
+    font-family:'Arimo' !important;
+}
+
+.logo{
+   background-color:inherit;
+   display:inline-block;
+   width: 165px;
+ 
+}
+
+
+.navbar-nav{
+    margin-top:45px !important;
+    margin-left:50%;
+}
+
+    .navbar-nav li:hover {
+        background-color: #2cc5f7 !important;
+    }
+
+    .navbar-nav a {
+        color: #757575 !important;
+        font-weight:700;
+    }
+
+.page-header-top {
+    background-color: #27343e;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+    .page-header-top i {
+        padding-right:2px;
+        font-size: 13px;
+        color: #2cc5f7;
+    }
+
+    .page-header-top a{
+        color:white !important;
+    }
+
+
+
+#span-mailto{
+    padding-left:30px;
+}
+
+#span-phone{
+    padding-left:10px;
+    font-size:16px;
+}
