@@ -55,6 +55,9 @@
     direction: rtl;
 }
 
+.tab-pane{
+    margin-right:40px;
+}
 
 .tab-icon {
     text-align: center;
@@ -79,12 +82,38 @@
     text-align: center;
     font-weight: 700;
     word-wrap: break-word;
+    color:black;
+}
+
+
+
+.nav-tabs :first-child .tab-icon {
+    color: #b56ae4;
+    border-color: #b56ae4;
 }
 
 .nav-tabs li:nth-child(2) .tab-icon {
     color: #fc6137 !important;
     border-color: #fc6137 !important;
 }
+
+.nav-tabs li:nth-child(3) .tab-icon {
+    color: #4ad26d;
+    border-color: #4ad26d;
+}
+
+.nav-tabs li:nth-child(4) .tab-icon {
+    color: #2cc5f7;
+    border-color: #2cc5f7;
+}
+
+
+
+    .nav-tabs :first-child .tab-icon:hover {
+        background-color: #b56ae4;
+        border-color: #b56ae4;
+        color:white;
+    }
 
 .nav-tabs li:first-child.active .tab-icon {
     color: white !important;

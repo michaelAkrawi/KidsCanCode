@@ -50,11 +50,36 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
+    <Content Include="main.html" />
+    <Content Include="css\main.css" />
+    <Content Include="js\main.js" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="index-2.html" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.1.1.js" />
+    <Content Include="fonts\CODING_SCHOOL_LOGO_OP_1.png" />
+    <Content Include="images\CODING_SCHOOL_LOGO_OP_1.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="js\" />
+    <Folder Include="fonts\" />
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\fontawesome-webfont.woff2" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
