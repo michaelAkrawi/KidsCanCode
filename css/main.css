@@ -1,52 +1,102 @@
-﻿body{
-    font-family:'Arimo' !important;
+﻿body {
+    font-family: 'Arimo' !important;
 }
 
-.logo{
-   background-color:inherit;
-   display:inline-block;
-   width: 165px;
- 
+.logo {
+    background-color: inherit;
+    display: inline-block;
+    width: 165px;
 }
 
 
-.navbar-nav{
-    margin-top:45px !important;
-    margin-left:50%;
+.navbar-nav {
+    margin-top: 45px !important;
+    margin-left: 50%;
 }
 
-    .navbar-nav li:hover {
+    .navbar-nav li a:hover {
         background-color: #2cc5f7 !important;
+        color: white !important;
     }
 
     .navbar-nav a {
         color: #757575 !important;
-        font-weight:700;
+        font-weight: 700 !important;
     }
 
 .page-header-top {
     background-color: #27343e;
-    padding-top:25px;
-    padding-bottom:25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
     .page-header-top i {
-        padding-right:2px;
+        padding-right: 2px;
         font-size: 13px;
         color: #2cc5f7;
     }
 
-    .page-header-top a{
-        color:white !important;
+    .page-header-top a {
+        color: white !important;
     }
 
 
 
-#span-mailto{
-    padding-left:30px;
+#span-mailto {
+    padding-left: 30px;
 }
 
-#span-phone{
-    padding-left:10px;
-    font-size:16px;
+#span-phone {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.page-content {
+    direction: rtl;
+}
+
+
+.tab-icon {
+    text-align: center;
+    padding: 20px;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 2px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+    .tab-icon i {
+        font-size: 24px;
+    }
+
+.nav-tabs li.active a {
+    border: none !important;
+}
+
+.nav-tabs li p {
+    text-align: center;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.nav-tabs li:nth-child(2) .tab-icon {
+    color: #fc6137 !important;
+    border-color: #fc6137 !important;
+}
+
+.nav-tabs li:first-child.active .tab-icon {
+    color: white !important;
+    background-color: #b56ae4 !important;
+}
+
+.nav-tabs li:nth-child(2).active .tab-icon {
+    color: white !important;
+    background-color: #fc6137 !important;
+}
+
+
+.about-tabs {
+    border: none !important;
 }

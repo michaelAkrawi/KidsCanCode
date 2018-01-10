@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/config
+/.vs/KidsCanCode/v15/Server/sqlite3
+/Backup
+/bin
+/.vs/KidsCanCode/v15
+/obj/Debug
+/UpgradeLog.htm
