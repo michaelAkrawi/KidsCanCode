@@ -55,8 +55,40 @@
     direction: rtl;
 }
 
-.tab-pane{
-    margin-right:40px;
+.page-content-header h2 {
+    color: #27343e;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.page-content-header div {
+    color: #cfdae2;
+    position: relative;
+}
+
+    .page-content-header div:before {
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 40px);
+        right: auto;
+        width: 25px;
+        height: 2px;
+        background-color: #cfdae2;
+        content: "";
+    }
+
+    .page-content-header div::after {
+        position: absolute;
+        top: 50%;
+        right: calc(50% - 40px);
+        width: 25px;
+        height: 2px;
+        background-color: #cfdae2;
+        content: "";
+    }
+
+.tab-pane {
+    margin-right: 40px;
 }
 
 .tab-icon {
@@ -68,7 +100,23 @@
     width: 75px;
     height: 75px;
     cursor: pointer;
+    position: relative;
 }
+
+    .tab-icon:after {
+        position: absolute;
+        top: calc(50% - 7.5px);
+        left: -7px;
+        width: 15px;
+        height: 15px;
+        content: "";
+        border: 2px solid white;
+        transform: rotate(45deg);
+        border-radius: 3px;
+        border-right-color: white;
+        border-bottom-color: white;
+        background: #fff;
+    }
 
     .tab-icon i {
         font-size: 24px;
@@ -82,38 +130,76 @@
     text-align: center;
     font-weight: 700;
     word-wrap: break-word;
-    color:black;
+    color: black;
 }
 
 
 
-.nav-tabs :first-child .tab-icon {
+.nav-tabs li:first-child .tab-icon {
     color: #b56ae4;
     border-color: #b56ae4;
 }
 
+    .nav-tabs li:first-child .tab-icon::after {
+        border-left-color: #b56ae4;
+        border-bottom-color: #b56ae4;
+    }
+
 .nav-tabs li:nth-child(2) .tab-icon {
-    color: #fc6137 !important;
-    border-color: #fc6137 !important;
+    color: #fc6137;
+    border-color: #fc6137;
 }
+
+    .nav-tabs li:nth-child(2) .tab-icon:after {
+        border-left-color: #fc6137;
+        border-bottom-color: #fc6137;
+    }
 
 .nav-tabs li:nth-child(3) .tab-icon {
     color: #4ad26d;
     border-color: #4ad26d;
 }
 
+    .nav-tabs li:nth-child(3) .tab-icon:after {
+        border-left-color: #4ad26d;
+        border-bottom-color: #4ad26d;
+    }
+
+
+
 .nav-tabs li:nth-child(4) .tab-icon {
     color: #2cc5f7;
     border-color: #2cc5f7;
 }
 
-
-
-    .nav-tabs :first-child .tab-icon:hover {
-        background-color: #b56ae4;
-        border-color: #b56ae4;
-        color:white;
+    .nav-tabs li:nth-child(4) .tab-icon:after {
+        border-left-color: #2cc5f7;
+        border-bottom-color: #2cc5f7;
     }
+
+
+
+.nav-tabs li:first-child .tab-icon:hover {
+    background-color: #b56ae4;
+    color: white;
+}
+
+.nav-tabs li:nth-child(2) .tab-icon:hover {
+    background-color: #fc6137;
+    color: white;
+}
+
+.nav-tabs li:nth-child(3) .tab-icon:hover {
+    background-color: #4ad26d;
+    color: white;
+}
+
+.nav-tabs li:nth-child(4) .tab-icon:hover {
+    background-color: #2cc5f7;
+    color: white;
+}
+
+
 
 .nav-tabs li:first-child.active .tab-icon {
     color: white !important;
