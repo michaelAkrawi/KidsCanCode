@@ -126,6 +126,11 @@
     border: none !important;
 }
 
+.nav-tabs > li > a:hover {
+    border-color: white !important;
+    background-color: white !important;
+}
+
 .nav-tabs li p {
     text-align: center;
     font-weight: 700;
@@ -184,33 +189,114 @@
     color: white;
 }
 
+    .nav-tabs li:first-child .tab-icon:hover + p {
+        color: #b56ae4;
+    }
+
+    .nav-tabs li:first-child .tab-icon:hover::after {
+        background: #b56ae4;
+        border-color: #b56ae4;
+    }
+
 .nav-tabs li:nth-child(2) .tab-icon:hover {
     background-color: #fc6137;
     color: white;
 }
+
+    .nav-tabs li:nth-child(2) .tab-icon:hover + p {
+        color: #fc6137;
+    }
+
+    .nav-tabs li:nth-child(2) .tab-icon:hover::after {
+        background: #fc6137;
+        border-color: #fc6137;
+    }
 
 .nav-tabs li:nth-child(3) .tab-icon:hover {
     background-color: #4ad26d;
     color: white;
 }
 
+    .nav-tabs li:nth-child(3) .tab-icon:hover + p {
+        color: #4ad26d;
+    }
+
+    .nav-tabs li:nth-child(3) .tab-icon:hover::after {
+        background: #4ad26d;
+        border-color: #4ad26d;
+    }
+
 .nav-tabs li:nth-child(4) .tab-icon:hover {
     background-color: #2cc5f7;
     color: white;
 }
 
+    .nav-tabs li:nth-child(4) .tab-icon:hover + p {
+        color: #2cc5f7;
+    }
+
+    .nav-tabs li:nth-child(4) .tab-icon:hover::after {
+        background: #2cc5f7;
+        border-color: #2cc5f7;
+    }
+
 
 
 .nav-tabs li:first-child.active .tab-icon {
     color: white !important;
-    background-color: #b56ae4 !important;
+    background-color: #b56ae4;
 }
 
 .nav-tabs li:nth-child(2).active .tab-icon {
     color: white !important;
-    background-color: #fc6137 !important;
+    background-color: #fc6137;
 }
 
+.nav-tabs li:nth-child(3).active .tab-icon {
+    color: white;
+    background-color: #4ad26d;
+}
+
+.nav-tabs li:nth-child(4).active .tab-icon {
+    color: white;
+    background-color: #2cc5f7;
+}
+
+.nav-tabs li:first-child.active a p {
+    color: #b56ae4;
+}
+
+.nav-tabs li:nth-child(2).active a p {
+    color: #fc6137;
+}
+
+.nav-tabs li:nth-child(3).active a p {
+    color: #4ad26d;
+}
+
+.nav-tabs li:nth-child(4).active a p {
+    color: #2cc5f7;
+}
+
+.nav-tabs li:first-child.active .tab-icon:after {
+    background: #b56ae4;
+    border-color: #b56ae4;
+}
+
+.nav-tabs li:nth-child(2).active .tab-icon::after {
+    background: #fc6137;
+    border-color: #fc6137;
+}
+
+.nav-tabs li:nth-child(3).active .tab-icon::after {
+    background: #4ad26d;
+    border-color: #4ad26d;
+}
+
+.nav-tabs li:nth-child(4).active .tab-icon::after {
+    background: #2cc5f7;
+    border-color: #2cc5f7;
+}
 
 .about-tabs {
     border: none !important;
