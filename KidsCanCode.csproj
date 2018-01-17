@@ -48,6 +48,8 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\circle-bg.png" />
+    <Content Include="images\page-header-backgroud.jpg" />
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="main.html" />
@@ -72,12 +74,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="css\" />
-    <Folder Include="js\" />
-    <Folder Include="fonts\" />
-    <Folder Include="images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="fonts\fontawesome-webfont.woff2" />
   </ItemGroup>
