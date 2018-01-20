@@ -64,6 +64,7 @@
 .page-content-header div {
     color: #cfdae2;
     position: relative;
+    margin-bottom:15px;
 }
 
     .page-content-header div:before {
@@ -320,3 +321,38 @@
         z-index: 2;
         display: block;
     }
+
+#contact p{
+    position:relative;
+}
+
+#contact i{
+    position:absolute;
+    top:10px;
+}
+
+.write-text {
+    border: none;
+    border-bottom: 1px solid #e3e2e2;
+    width:100%;
+    height:34px;
+    margin-right:25px;
+}
+
+#contact .row div{
+    margin-left:25px;
+}
+
+#contact input[type=submit] {
+    background-color: #2cc5f7;
+    color:white;
+    border-radius:10px;
+}
+
+#contact textarea {
+    border-color: #e3e2e2;
+}
+
+.right {
+    border-right: 2px solid #e3e2e2;
+}
