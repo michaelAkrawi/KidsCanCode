@@ -339,19 +339,26 @@
     margin-right:25px;
 }
 
+.write-text:focus{
+    outline:none;
+}
+
 #contact .row div{
     margin-left:25px;
 }
 
-#contact input[type=submit] {
+#contact input[type=button] {
     background-color: #2cc5f7;
     color:white;
-    border-radius:10px;
+    border-radius:20px;
+    border:none;
 }
 
 #contact textarea {
     border-color: #e3e2e2;
 }
+
+
 
 .right {
     border-right: 2px solid #e3e2e2;
