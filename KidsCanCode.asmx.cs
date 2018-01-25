@@ -25,17 +25,15 @@ namespace KidsCanCode
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public void VerifyCaptcha(string secret, string token)
         {
-            WebRequest request = WebRequest.Create("https://www.google.com/recaptcha/api/siteverify");
+            //Make a request to verify reCaptcha
+            WebRequest request = WebRequest.Create(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secret, token));
             request.Method = "POST";
-            byte[] byteArray = Encoding.UTF8.GetBytes(token);
             request.ContentType = "application/javascript";
-            request.ContentLength = byteArray.Length;
-
             Stream dataStream = request.GetRequestStream();
-            dataStream.Write(byteArray, 0, byteArray.Length);
             dataStream.Close();
+
+            //Make a new response for your validation request.
             WebResponse response = request.GetResponse();
-            Console.WriteLine(((HttpWebResponse)response).StatusDescription);
             dataStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(dataStream);
             string responseFromServer = reader.ReadToEnd();
@@ -43,8 +41,9 @@ namespace KidsCanCode
             dataStream.Close();
             response.Close();
 
+            //Write the response.
             dataStream.Dispose();
-            HttpContext.Current.Response.Write(JavasctiptSe);
+            HttpContext.Current.Response.Write(responseFromServer);
         }
     }
 }
