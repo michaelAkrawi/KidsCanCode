@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>KidsCanCode</title>
 </head>
 <body>
@@ -142,39 +143,39 @@
             </div>
 
             <div id="contact">
-               
-                    <div class="row">
-                        <div class="col-xl-3 col-md-4 col-sm-8 col-xs-12 pull-right">
-                            <p>
-                                <i class="fa fa-user"></i>
-                                <input type="text" class="write-text" placeholder="שם מלא" />
-                            </p>
-                            <p>
-                                <i class="fa fa-phone">
-                                </i>
-                                <input type="tel" class="write-text" placeholder="טלפון" />
+                <div class="row">
+                    <div class="col-xl-3 col-md-4 col-sm-8 col-xs-12 pull-right">
+                        <div class="g-recaptcha" data-sitekey="6LfuUEIUAAAAAMVdJrRHd2EC0FqgHH1WztafARue"></div>
+                        <p>
+                            <i class="fa fa-user"></i>
+                            <input id="txbName" type="text" class="write-text" placeholder="שם מלא" />
+                        </p>
+                        <p>
+                            <i class="fa fa-phone">
+                            </i>
+                            <input id="txbPhone" type="tel" class="write-text" placeholder="טלפון" />
 
-                            </p>
-                            <p>
-                                <i class="fa fa-envelope-o">
-                                </i>
-                                <input type="text" class="write-text" placeholder="Email" />
-                            </p>
-                            <p>
-                                <i class="fa fa fa-pencil"></i>
-                                <input type="text" class="write-text" placeholder="נושא הפנייה" />
-                            </p>
-                        </div>
-                        <div class="col-xl-3 col-md-4 sol-sm-8 col-xs-12 pull-right right">
-                            <span>
-                                תוכן הפנייה
-                            </span>
-                            <p>
-                                <textarea rows="5" cols="50"></textarea>
-                            </p>
-                            <input type="button" id="btnSend" value="שלח" class="btn btn-block" />
-                        </div>
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope-o">
+                            </i>
+                            <input id="txbEmail" type="text" class="write-text" placeholder="Email" />
+                        </p>
+                        <p>
+                            <i class="fa fa fa-pencil"></i>
+                            <input id="txbSubject" type="text" class="write-text" placeholder="נושא הפנייה" />
+                        </p>
                     </div>
+                    <div class="col-xl-3 col-md-4 sol-sm-8 col-xs-12 pull-right right">
+                        <span>
+                            תוכן הפנייה
+                        </span>
+                        <p>
+                            <textarea id="txbContent" rows="5" cols="50"></textarea>
+                        </p>
+                        <input type="button" id="btnSend" value="שלח" class="btn btn-block" />
+                    </div>
+                </div>
             </div>
 
         </div>

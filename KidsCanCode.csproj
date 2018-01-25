@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -50,6 +51,7 @@
   <ItemGroup>
     <Content Include="images\circle-bg.png" />
     <Content Include="images\page-header-backgroud.jpg" />
+    <Content Include="KidsCanCode.asmx" />
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="main.html" />
@@ -72,6 +74,10 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="KidsCanCode.asmx.cs">
+      <DependentUpon>KidsCanCode.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup />
