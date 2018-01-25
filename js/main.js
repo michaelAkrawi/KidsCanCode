@@ -1,17 +1,26 @@
-﻿$(document).ready(function () {
+﻿
 
-    $("#btnSend").click(function () {
 
-        var token = grecaptcha.getResponse();
-        var response = $.post('http://localhost:59115/KidsCanCode.asmx/VerifyCaptcha',
+  function validatereCaptcha(){
+
+  var token = grecaptcha.getResponse();     
+  var response = $.post('http://127.0.0.1:8080/KidsCanCode.asmx/VerifyCaptcha',
             {
-                secret: '6LfuUEIUAAAAAMVdJrRHd2EC0FqgHH1WztafARue',
+                secret: '6Lcyj0IUAAAAAMn474EgLj5U5B99uiMglCdfTBFK',
                 token: token
-            }).done(function (data) {
-                console.log(data);
+            }).done(function (json) {
+                var data = JSON.parse(json);
+                if(data.success == true){
+                  console.log('success');
+                  grecaptcha.reset();
+                }
+            }).fail(function(){
+               
             });
 
+ }
 
+ function createNewLead(){
 
         var name = $("#txbName").val();
         var phone = $("#txbPhone").val();
@@ -43,7 +52,4 @@
             console.log(jqXHR);
             alert("Request failed: " + textStatus);
         });
-
-    });
-
-});
+ }
