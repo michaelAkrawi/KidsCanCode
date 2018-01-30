@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\circle-bg.png" />
+    <Content Include="images\girl-baseballcap.png" />
     <Content Include="images\page-header-backgroud.jpg" />
     <Content Include="KidsCanCode.asmx" />
     <Content Include="Web.config" />

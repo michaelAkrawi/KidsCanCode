@@ -24,6 +24,12 @@
         font-weight: 700 !important;
     }
 
+.image-girl-top {
+    position: absolute;
+    bottom: 0%;
+    z-index: 3;
+}
+
 .page-header-top {
     background-color: #27343e;
     padding-top: 25px;
@@ -64,7 +70,7 @@
 .page-content-header div {
     color: #cfdae2;
     position: relative;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
     .page-content-header div:before {
@@ -322,36 +328,38 @@
         display: block;
     }
 
-#contact p{
-    position:relative;
+
+
+#contact p {
+    position: relative;
 }
 
-#contact i{
-    position:absolute;
-    top:10px;
+#contact i {
+    position: absolute;
+    top: 10px;
 }
 
 .write-text {
     border: none;
     border-bottom: 1px solid #e3e2e2;
-    width:100%;
-    height:34px;
-    margin-right:25px;
+    width: 100%;
+    height: 34px;
+    margin-right: 25px;
 }
 
-.write-text:focus{
-    outline:none;
-}
+    .write-text:focus {
+        outline: none;
+    }
 
-#contact .row div{
-    margin-left:25px;
+#contact .row div {
+    margin-left: 25px;
 }
 
 #contact input[type=button] {
     background-color: #2cc5f7;
-    color:white;
-    border-radius:20px;
-    border:none;
+    color: white;
+    border-radius: 20px;
+    border: none;
 }
 
 #contact textarea {
