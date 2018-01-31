@@ -1,5 +1,8 @@
 ﻿body {
     font-family: 'Arimo' !important;
+    margin: 0px !important;
+    overflow-x: hidden;
+  
 }
 
 .logo {
@@ -28,6 +31,8 @@
     position: absolute;
     bottom: 0%;
     z-index: 3;
+    width: 35%;
+    left: 30%
 }
 
 .page-header-top {
@@ -328,6 +333,21 @@
         display: block;
     }
 
+    .section-header div:nth-child(3) {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+
+    .section-header h4 {
+        background-color: #7af199;
+        color: white;
+        font-weight: 700;
+        border-radius: 3px;
+        font-size: 2em;
+        padding: 10px;
+        z-index: 4;
+    }
 
 
 #contact p {
@@ -366,8 +386,3 @@
     border-color: #e3e2e2;
 }
 
-
-
-.right {
-    border-right: 2px solid #e3e2e2;
-}
