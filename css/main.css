@@ -2,7 +2,6 @@
     font-family: 'Arimo' !important;
     margin: 0px !important;
     overflow-x: hidden;
-  
 }
 
 .logo {
@@ -386,3 +385,35 @@
     border-color: #e3e2e2;
 }
 
+.section-header-text {
+    position: absolute;
+    right: 10%;
+    z-index: 4;
+    color: white;
+    font-weight: bold;
+}
+
+.section-header-text-h4 {
+    top: 50%;
+}
+
+.section-header-text-h1 {
+    top: 60%;
+}
+
+.section-header h4 {
+    padding: 10px;
+    background-color: #7af199;
+    border-radius: 3px;
+}
+
+@media (max-width:850px) {
+    h4 {
+        font-size: 16px !important;
+        padding: 5px !important;
+    }
+
+    h1 {
+        font-size: 22px !important;
+    }
+}
