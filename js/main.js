@@ -1,21 +1,20 @@
 ﻿
 
-
   function validatereCaptcha(){
 
   var token = grecaptcha.getResponse();     
-  var response = $.post('http://127.0.0.1:8080/KidsCanCode.asmx/VerifyCaptcha',
+  var response = $.post('http://localhost:59115/KidsCanCode.asmx/VerifyCaptcha',
             {
-                secret: '6Lcyj0IUAAAAAMn474EgLj5U5B99uiMglCdfTBFK',
+                secret: '6LfuUEIUAAAAAP5IxNLLt1KpS6cNzp_qWFcyhAEr',
                 token: token
             }).done(function (json) {
                 var data = JSON.parse(json);
                 if(data.success == true){
                   console.log('success');
-                  grecaptcha.reset();
+                 // grecaptcha.reset();
                 }
             }).fail(function(){
-               
+                grecaptcha.reset();
             });
 
  }
