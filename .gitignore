@@ -9,3 +9,5 @@
 /.vs/KidsCanCode/v15
 /obj/Debug
 /UpgradeLog.htm
+/.vs/slnx.sqlite
+/obj/Release/KidsCanCode.csproj.CoreCompileInputs.cache
